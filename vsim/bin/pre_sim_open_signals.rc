@@ -2,7 +2,7 @@ Magic 271485
 Revision Verdi_O-2018.09-SP2
 
 ; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
-viewPort 0 27 2554 423 342 65
+viewPort 0 27 2560 627 423 476
 
 ; File list:
 ; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
@@ -16,8 +16,8 @@ signalSpacing 5
 
 ; windowTimeUnit is used for zoom, cursor & marker
 ; waveform viewport range
-zoom 0.000000 898.276587
-cursor 0.000000
+zoom 17583.625730 17613.290191
+cursor 17594.000000
 marker 0.000000
 
 ; user define markers
@@ -25,7 +25,7 @@ marker 0.000000
 ; visible top row signal index
 top 0
 ; marker line index
-markerPos 348
+markerPos 247
 
 ; event list
 ; addEvent event_name event_expression
@@ -45,357 +45,256 @@ COMPLEX_EVENT_END
 curSTATUS ByChange
 
 
-addGroup "u_e203_subsys_top"
+addGroup "u_e203_soc_top" -e FALSE
 activeDirFile "" "/home/ICer/project/e203/vsim/run/inter.fsdb"
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/hfextclk
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/hfxoscen
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/lfextclk
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/lfxoscen
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_dbgmode0_n_i_ival
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_dbgmode1_n_i_ival
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_dbgmode2_n_i_ival
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_bootrom_n_i_ival
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_bootrom_n_o_oval
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_bootrom_n_o_oe
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_bootrom_n_o_ie
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_bootrom_n_o_pue
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_bootrom_n_o_ds
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_aon_erst_n_i_ival
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_aon_erst_n_o_oval
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_aon_erst_n_o_oe
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_aon_erst_n_o_ie
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_aon_erst_n_o_pue
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_aon_erst_n_o_ds
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_aon_pmu_dwakeup_n_i_ival
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_aon_pmu_dwakeup_n_o_oval
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_aon_pmu_dwakeup_n_o_oe
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_aon_pmu_dwakeup_n_o_ie
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_aon_pmu_dwakeup_n_o_pue
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_aon_pmu_dwakeup_n_o_ds
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_aon_pmu_vddpaden_i_ival
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_aon_pmu_vddpaden_o_oval
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_aon_pmu_vddpaden_o_oe
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_aon_pmu_vddpaden_o_ie
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_aon_pmu_vddpaden_o_pue
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_aon_pmu_vddpaden_o_ds
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_aon_pmu_padrst_i_ival
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_aon_pmu_padrst_o_oval
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_aon_pmu_padrst_o_oe
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_aon_pmu_padrst_o_ie
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_aon_pmu_padrst_o_pue
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_aon_pmu_padrst_o_ds
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/core_mhartid[0:0]
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/ext2itcm_icb_cmd_valid
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/ext2itcm_icb_cmd_ready
-addSignal -h 15 -UNSIGNED -HEX /tb_top/u_e203_soc_top/u_e203_subsys_top/ext2itcm_icb_cmd_addr[15:0]
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/ext2itcm_icb_cmd_read
-addSignal -h 15 -UNSIGNED -HEX /tb_top/u_e203_soc_top/u_e203_subsys_top/ext2itcm_icb_cmd_wdata[31:0]
-addSignal -h 15 -UNSIGNED -HEX /tb_top/u_e203_soc_top/u_e203_subsys_top/ext2itcm_icb_cmd_wmask[3:0]
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/ext2itcm_icb_rsp_valid
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/ext2itcm_icb_rsp_ready
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/ext2itcm_icb_rsp_err
-addSignal -h 15 -UNSIGNED -HEX /tb_top/u_e203_soc_top/u_e203_subsys_top/ext2itcm_icb_rsp_rdata[31:0]
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/ext2dtcm_icb_cmd_valid
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/ext2dtcm_icb_cmd_ready
-addSignal -h 15 -UNSIGNED -HEX /tb_top/u_e203_soc_top/u_e203_subsys_top/ext2dtcm_icb_cmd_addr[15:0]
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/ext2dtcm_icb_cmd_read
-addSignal -h 15 -UNSIGNED -HEX /tb_top/u_e203_soc_top/u_e203_subsys_top/ext2dtcm_icb_cmd_wdata[31:0]
-addSignal -h 15 -UNSIGNED -HEX /tb_top/u_e203_soc_top/u_e203_subsys_top/ext2dtcm_icb_cmd_wmask[3:0]
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/ext2dtcm_icb_rsp_valid
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/ext2dtcm_icb_rsp_ready
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/ext2dtcm_icb_rsp_err
-addSignal -h 15 -UNSIGNED -HEX /tb_top/u_e203_soc_top/u_e203_subsys_top/ext2dtcm_icb_rsp_rdata[31:0]
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/sysper_icb_cmd_valid
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/sysper_icb_cmd_ready
-addSignal -h 15 -UNSIGNED -HEX /tb_top/u_e203_soc_top/u_e203_subsys_top/sysper_icb_cmd_addr[31:0]
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/sysper_icb_cmd_read
-addSignal -h 15 -UNSIGNED -HEX /tb_top/u_e203_soc_top/u_e203_subsys_top/sysper_icb_cmd_wdata[31:0]
-addSignal -h 15 -UNSIGNED -HEX /tb_top/u_e203_soc_top/u_e203_subsys_top/sysper_icb_cmd_wmask[3:0]
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/sysper_icb_rsp_valid
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/sysper_icb_rsp_ready
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/sysper_icb_rsp_err
-addSignal -h 15 -UNSIGNED -HEX /tb_top/u_e203_soc_top/u_e203_subsys_top/sysper_icb_rsp_rdata[31:0]
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/sysfio_icb_cmd_valid
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/sysfio_icb_cmd_ready
-addSignal -h 15 -UNSIGNED -HEX /tb_top/u_e203_soc_top/u_e203_subsys_top/sysfio_icb_cmd_addr[31:0]
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/sysfio_icb_cmd_read
-addSignal -h 15 -UNSIGNED -HEX /tb_top/u_e203_soc_top/u_e203_subsys_top/sysfio_icb_cmd_wdata[31:0]
-addSignal -h 15 -UNSIGNED -HEX /tb_top/u_e203_soc_top/u_e203_subsys_top/sysfio_icb_cmd_wmask[3:0]
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/sysfio_icb_rsp_valid
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/sysfio_icb_rsp_ready
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/sysfio_icb_rsp_err
-addSignal -h 15 -UNSIGNED -HEX /tb_top/u_e203_soc_top/u_e203_subsys_top/sysfio_icb_rsp_rdata[31:0]
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/sysmem_icb_cmd_valid
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/sysmem_icb_cmd_ready
-addSignal -h 15 -UNSIGNED -HEX /tb_top/u_e203_soc_top/u_e203_subsys_top/sysmem_icb_cmd_addr[31:0]
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/sysmem_icb_cmd_read
-addSignal -h 15 -UNSIGNED -HEX /tb_top/u_e203_soc_top/u_e203_subsys_top/sysmem_icb_cmd_wdata[31:0]
-addSignal -h 15 -UNSIGNED -HEX /tb_top/u_e203_soc_top/u_e203_subsys_top/sysmem_icb_cmd_wmask[3:0]
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/sysmem_icb_rsp_valid
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/sysmem_icb_rsp_ready
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/sysmem_icb_rsp_err
-addSignal -h 15 -UNSIGNED -HEX /tb_top/u_e203_soc_top/u_e203_subsys_top/sysmem_icb_rsp_rdata[31:0]
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_0_i_ival
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_0_o_oval
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_0_o_oe
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_0_o_ie
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_0_o_pue
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_0_o_ds
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_1_i_ival
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_1_o_oval
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_1_o_oe
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_1_o_ie
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_1_o_pue
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_1_o_ds
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_2_i_ival
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_2_o_oval
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_2_o_oe
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_2_o_ie
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_2_o_pue
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_2_o_ds
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_3_i_ival
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_3_o_oval
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_3_o_oe
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_3_o_ie
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_3_o_pue
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_3_o_ds
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_4_i_ival
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_4_o_oval
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_4_o_oe
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_4_o_ie
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_4_o_pue
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_4_o_ds
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_5_i_ival
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_5_o_oval
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_5_o_oe
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_5_o_ie
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_5_o_pue
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_5_o_ds
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_6_i_ival
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_6_o_oval
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_6_o_oe
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_6_o_ie
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_6_o_pue
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_6_o_ds
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_7_i_ival
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_7_o_oval
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_7_o_oe
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_7_o_ie
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_7_o_pue
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_7_o_ds
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_8_i_ival
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_8_o_oval
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_8_o_oe
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_8_o_ie
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_8_o_pue
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_8_o_ds
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_9_i_ival
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_9_o_oval
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_9_o_oe
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_9_o_ie
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_9_o_pue
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_9_o_ds
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_10_i_ival
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_10_o_oval
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_10_o_oe
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_10_o_ie
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_10_o_pue
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_10_o_ds
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_11_i_ival
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_11_o_oval
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_11_o_oe
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_11_o_ie
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_11_o_pue
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_11_o_ds
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_12_i_ival
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_12_o_oval
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_12_o_oe
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_12_o_ie
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_12_o_pue
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_12_o_ds
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_13_i_ival
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_13_o_oval
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_13_o_oe
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_13_o_ie
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_13_o_pue
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_13_o_ds
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_14_i_ival
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_14_o_oval
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_14_o_oe
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_14_o_ie
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_14_o_pue
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_14_o_ds
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_15_i_ival
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_15_o_oval
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_15_o_oe
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_15_o_ie
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_15_o_pue
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_15_o_ds
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_16_i_ival
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_16_o_oval
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_16_o_oe
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_16_o_ie
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_16_o_pue
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_16_o_ds
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_17_i_ival
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_17_o_oval
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_17_o_oe
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_17_o_ie
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_17_o_pue
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_17_o_ds
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_18_i_ival
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_18_o_oval
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_18_o_oe
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_18_o_ie
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_18_o_pue
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_18_o_ds
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_19_i_ival
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_19_o_oval
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_19_o_oe
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_19_o_ie
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_19_o_pue
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_19_o_ds
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_20_i_ival
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_20_o_oval
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_20_o_oe
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_20_o_ie
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_20_o_pue
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_20_o_ds
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_21_i_ival
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_21_o_oval
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_21_o_oe
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_21_o_ie
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_21_o_pue
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_21_o_ds
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_22_i_ival
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_22_o_oval
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_22_o_oe
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_22_o_ie
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_22_o_pue
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_22_o_ds
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_23_i_ival
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_23_o_oval
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_23_o_oe
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_23_o_ie
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_23_o_pue
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_23_o_ds
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_24_i_ival
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_24_o_oval
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_24_o_oe
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_24_o_ie
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_24_o_pue
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_24_o_ds
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_25_i_ival
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_25_o_oval
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_25_o_oe
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_25_o_ie
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_25_o_pue
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_25_o_ds
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_26_i_ival
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_26_o_oval
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_26_o_oe
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_26_o_ie
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_26_o_pue
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_26_o_ds
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_27_i_ival
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_27_o_oval
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_27_o_oe
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_27_o_ie
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_27_o_pue
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_27_o_ds
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_28_i_ival
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_28_o_oval
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_28_o_oe
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_28_o_ie
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_28_o_pue
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_28_o_ds
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_29_i_ival
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_29_o_oval
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_29_o_oe
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_29_o_ie
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_29_o_pue
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_29_o_ds
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_30_i_ival
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_30_o_oval
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_30_o_oe
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_30_o_ie
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_30_o_pue
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_30_o_ds
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_31_i_ival
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_31_o_oval
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_31_o_oe
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_31_o_ie
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_31_o_pue
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_gpio_31_o_ds
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_qspi_sck_i_ival
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_qspi_sck_o_oval
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_qspi_sck_o_oe
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_qspi_sck_o_ie
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_qspi_sck_o_pue
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_qspi_sck_o_ds
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_qspi_dq_0_i_ival
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_qspi_dq_0_o_oval
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_qspi_dq_0_o_oe
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_qspi_dq_0_o_ie
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_qspi_dq_0_o_pue
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_qspi_dq_0_o_ds
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_qspi_dq_1_i_ival
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_qspi_dq_1_o_oval
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_qspi_dq_1_o_oe
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_qspi_dq_1_o_ie
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_qspi_dq_1_o_pue
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_qspi_dq_1_o_ds
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_qspi_dq_2_i_ival
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_qspi_dq_2_o_oval
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_qspi_dq_2_o_oe
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_qspi_dq_2_o_ie
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_qspi_dq_2_o_pue
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_qspi_dq_2_o_ds
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_qspi_dq_3_i_ival
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_qspi_dq_3_o_oval
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_qspi_dq_3_o_oe
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_qspi_dq_3_o_ie
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_qspi_dq_3_o_pue
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_qspi_dq_3_o_ds
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_qspi_cs_0_i_ival
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_qspi_cs_0_o_oval
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_qspi_cs_0_o_oe
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_qspi_cs_0_o_ie
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_qspi_cs_0_o_pue
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_qspi_cs_0_o_ds
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_jtag_TCK_i_ival
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_jtag_TCK_o_oval
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_jtag_TCK_o_oe
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_jtag_TCK_o_ie
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_jtag_TCK_o_pue
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_jtag_TCK_o_ds
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_jtag_TMS_i_ival
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_jtag_TMS_o_oval
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_jtag_TMS_o_oe
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_jtag_TMS_o_ie
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_jtag_TMS_o_pue
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_jtag_TMS_o_ds
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_jtag_TDI_i_ival
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_jtag_TDI_o_oval
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_jtag_TDI_o_oe
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_jtag_TDI_o_ie
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_jtag_TDI_o_pue
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_jtag_TDI_o_ds
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_jtag_TDO_i_ival
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_jtag_TDO_o_oval
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_jtag_TDO_o_oe
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_jtag_TDO_o_ie
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_jtag_TDO_o_pue
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_jtag_TDO_o_ds
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_jtag_TRST_n_i_ival
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_jtag_TRST_n_o_oval
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_jtag_TRST_n_o_oe
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_jtag_TRST_n_o_ie
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_jtag_TRST_n_o_pue
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/io_pads_jtag_TRST_n_o_ds
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/test_iso_override
-addSignal -h 15 /tb_top/u_e203_soc_top/u_e203_subsys_top/test_mode
-addGroup "G2"
+addSignal -h 20 /tb_top/u_e203_soc_top/hfextclk
+addSignal -h 20 /tb_top/u_e203_soc_top/hfxoscen
+addSignal -h 20 /tb_top/u_e203_soc_top/lfextclk
+addSignal -h 20 /tb_top/u_e203_soc_top/lfxoscen
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_jtag_TCK_i_ival
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_jtag_TMS_i_ival
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_jtag_TDI_i_ival
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_jtag_TDO_o_oval
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_jtag_TDO_o_oe
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_0_i_ival
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_0_o_oval
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_0_o_oe
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_0_o_ie
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_0_o_pue
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_0_o_ds
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_1_i_ival
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_1_o_oval
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_1_o_oe
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_1_o_ie
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_1_o_pue
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_1_o_ds
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_2_i_ival
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_2_o_oval
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_2_o_oe
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_2_o_ie
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_2_o_pue
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_2_o_ds
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_3_i_ival
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_3_o_oval
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_3_o_oe
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_3_o_ie
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_3_o_pue
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_3_o_ds
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_4_i_ival
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_4_o_oval
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_4_o_oe
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_4_o_ie
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_4_o_pue
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_4_o_ds
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_5_i_ival
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_5_o_oval
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_5_o_oe
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_5_o_ie
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_5_o_pue
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_5_o_ds
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_6_i_ival
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_6_o_oval
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_6_o_oe
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_6_o_ie
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_6_o_pue
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_6_o_ds
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_7_i_ival
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_7_o_oval
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_7_o_oe
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_7_o_ie
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_7_o_pue
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_7_o_ds
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_8_i_ival
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_8_o_oval
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_8_o_oe
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_8_o_ie
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_8_o_pue
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_8_o_ds
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_9_i_ival
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_9_o_oval
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_9_o_oe
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_9_o_ie
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_9_o_pue
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_9_o_ds
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_10_i_ival
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_10_o_oval
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_10_o_oe
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_10_o_ie
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_10_o_pue
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_10_o_ds
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_11_i_ival
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_11_o_oval
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_11_o_oe
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_11_o_ie
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_11_o_pue
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_11_o_ds
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_12_i_ival
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_12_o_oval
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_12_o_oe
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_12_o_ie
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_12_o_pue
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_12_o_ds
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_13_i_ival
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_13_o_oval
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_13_o_oe
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_13_o_ie
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_13_o_pue
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_13_o_ds
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_14_i_ival
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_14_o_oval
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_14_o_oe
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_14_o_ie
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_14_o_pue
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_14_o_ds
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_15_i_ival
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_15_o_oval
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_15_o_oe
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_15_o_ie
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_15_o_pue
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_15_o_ds
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_16_i_ival
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_16_o_oval
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_16_o_oe
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_16_o_ie
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_16_o_pue
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_16_o_ds
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_17_i_ival
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_17_o_oval
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_17_o_oe
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_17_o_ie
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_17_o_pue
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_17_o_ds
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_18_i_ival
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_18_o_oval
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_18_o_oe
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_18_o_ie
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_18_o_pue
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_18_o_ds
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_19_i_ival
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_19_o_oval
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_19_o_oe
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_19_o_ie
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_19_o_pue
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_19_o_ds
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_20_i_ival
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_20_o_oval
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_20_o_oe
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_20_o_ie
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_20_o_pue
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_20_o_ds
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_21_i_ival
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_21_o_oval
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_21_o_oe
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_21_o_ie
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_21_o_pue
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_21_o_ds
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_22_i_ival
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_22_o_oval
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_22_o_oe
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_22_o_ie
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_22_o_pue
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_22_o_ds
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_23_i_ival
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_23_o_oval
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_23_o_oe
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_23_o_ie
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_23_o_pue
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_23_o_ds
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_24_i_ival
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_24_o_oval
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_24_o_oe
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_24_o_ie
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_24_o_pue
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_24_o_ds
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_25_i_ival
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_25_o_oval
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_25_o_oe
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_25_o_ie
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_25_o_pue
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_25_o_ds
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_26_i_ival
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_26_o_oval
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_26_o_oe
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_26_o_ie
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_26_o_pue
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_26_o_ds
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_27_i_ival
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_27_o_oval
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_27_o_oe
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_27_o_ie
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_27_o_pue
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_27_o_ds
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_28_i_ival
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_28_o_oval
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_28_o_oe
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_28_o_ie
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_28_o_pue
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_28_o_ds
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_29_i_ival
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_29_o_oval
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_29_o_oe
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_29_o_ie
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_29_o_pue
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_29_o_ds
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_30_i_ival
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_30_o_oval
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_30_o_oe
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_30_o_ie
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_30_o_pue
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_30_o_ds
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_31_i_ival
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_31_o_oval
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_31_o_oe
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_31_o_ie
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_31_o_pue
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_gpio_31_o_ds
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_qspi_sck_o_oval
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_qspi_cs_0_o_oval
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_qspi_dq_0_i_ival
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_qspi_dq_0_o_oval
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_qspi_dq_0_o_oe
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_qspi_dq_0_o_ie
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_qspi_dq_0_o_pue
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_qspi_dq_0_o_ds
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_qspi_dq_1_i_ival
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_qspi_dq_1_o_oval
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_qspi_dq_1_o_oe
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_qspi_dq_1_o_ie
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_qspi_dq_1_o_pue
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_qspi_dq_1_o_ds
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_qspi_dq_2_i_ival
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_qspi_dq_2_o_oval
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_qspi_dq_2_o_oe
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_qspi_dq_2_o_ie
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_qspi_dq_2_o_pue
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_qspi_dq_2_o_ds
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_qspi_dq_3_i_ival
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_qspi_dq_3_o_oval
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_qspi_dq_3_o_oe
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_qspi_dq_3_o_ie
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_qspi_dq_3_o_pue
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_qspi_dq_3_o_ds
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_aon_erst_n_i_ival
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_dbgmode0_n_i_ival
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_dbgmode1_n_i_ival
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_dbgmode2_n_i_ival
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_bootrom_n_i_ival
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_aon_pmu_dwakeup_n_i_ival
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_aon_pmu_padrst_o_oval
+addSignal -h 20 /tb_top/u_e203_soc_top/io_pads_aon_pmu_vddpaden_o_oval
+addGroup "G3"
+addSignal -h 20 /tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/clk
+addSignal -h 20 -UNSIGNED -HEX /tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/din[63:0]
+addSignal -h 20 /tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/cs
+addSignal -h 20 /tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/we
+addSignal -h 20 -UNSIGNED -HEX /tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/wem[7:0]
+addSignal -h 20 -UNSIGNED -HEX /tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/wen[7:0]
+addSignal -h 20 /tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/ren
+addSignal -h 20 -UNSIGNED -HEX /tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/addr[12:0]
+addSignal -h 20 -UNSIGNED -HEX /tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/addr_r[12:0]
+addSignal -h 20 -UNSIGNED -HEX /tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/dout_pre[63:0]
+addSignal -h 20 -UNSIGNED -HEX /tb_top/u_e203_soc_top/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/dout[63:0]
+addGroup "G4"
 
 ; getSignalForm Scope Hierarchy Status
 ; active file of getSignalForm
